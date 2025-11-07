@@ -46,10 +46,6 @@ nav ul {
     text-align: center;
 }
 
-nav ul li {
-    /* width: auto; */
-}
-
 main {
     grid-column: 1 / span 2;
     background: #b4b2b2;
