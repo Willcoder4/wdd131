@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    /* padding: 20px; */
+}
+
+header {
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    font-size: larger;
+    font-weight: bold;
+    padding: 0 1rem;
+    /* gap: 2rem; */
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 10px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    padding: .2rem 0.5rem;
+}
+
+main {
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.temples-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    
+}

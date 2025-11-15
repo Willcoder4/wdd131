@@ -168,3 +168,12 @@ footer {
     color: white;
     margin-top: 2rem;
 }
+
+.copyright {
+    font-size: larger;
+    /* font-weight: bold; */
+}
+
+#lastmodified {
+    color: aqua;
+}
