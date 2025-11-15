@@ -21,7 +21,7 @@
         font-weight: bold;
     }
 
-    ul li a:hover {
+    ul li a:hover, ul li a:focus {
         background-color: rgba(0, 0, 0, 0.1);
         border-radius: 15px;
         transition: all 0.3s ease;

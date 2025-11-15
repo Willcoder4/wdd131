@@ -61,6 +61,7 @@ main {
 h1 {
     text-align: center;
     margin: 2rem;
+    color: #4CAF50;
 }
 
 .temples-grid {
@@ -81,6 +82,11 @@ figure {
     padding: 1rem;
     background-color: rgba(76, 175, 80 , 0.7);
     border-radius: 10px;
+}
+
+figure:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 figcaption {
