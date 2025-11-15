@@ -51,6 +51,18 @@ li {
     display: none;
 }
 
+.show li {
+  display: block;
+}
+
+li a {
+  display: block;
+  width: 80%;
+}
+
+.show::before {
+  content: "X";
+}
 
 main {
     width: 90%;
