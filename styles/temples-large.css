@@ -1,0 +1,30 @@
+@media screen and (min-width: 600px) {
+    .navigation::before {
+        content: none;
+    }
+    
+    li {
+        display: block;
+    }
+
+    ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            padding: 10px;
+            font-size: large;
+        }
+
+    ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    ul li a:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        transition: all 0.3s ease;
+        padding: .7rem 2rem;
+    }
+}

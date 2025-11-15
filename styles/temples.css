@@ -18,35 +18,49 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: .5rem;
-    font-size: larger;
-    font-weight: bold;
-    padding: 0 1rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 1rem 1rem;
     /* gap: 2rem; */
 }
 
-ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    padding: 10px;
-}
-
-ul li a {
+footer {
+    background-color: #4CAF50;
     color: white;
-    text-decoration: none;
-    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    /* font-weight: bold; */
 }
 
-ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    transition: all 0.3s ease;
-    padding: .2rem 0.5rem;
+#lastmodified {
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 700;
 }
+
+.navigation::before {
+    content: "≡";
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+li {
+    display: none;
+}
+
 
 main {
     width: 90%;
     margin: 1rem auto;
+    padding: 0 5rem 3rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem;
 }
 
 .temples-grid {
@@ -62,12 +76,15 @@ img {
     border-radius: 10px;
 }
 
+figure {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: rgba(76, 175, 80 , 0.7);
+    border-radius: 10px;
+}
+
 figcaption {
     text-align: center;
     margin-top: 0.5rem;
     font-weight: bold;
-}
-
-@media (max-width: 600px) {
-    
 }
