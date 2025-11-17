@@ -88,7 +88,8 @@ nav {
   text-decoration: none;
   text-align: center;
   color: whitesmoke;
-  padding: 1rem;
+  padding: 1rem 0;
+  border-top: 2px solid whitesmoke;
 }
 
 .menu.active li a:hover {
