@@ -76,13 +76,17 @@ nav {
 }
 
 .menu.active li, .menu.active li a {
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   list-style: none;
   text-decoration: none;
   text-align: center;
   color: whitesmoke;
   padding: 1rem;
+}
+
+.menu.active li a {
+  width: 100%;
 }
 
 .menu.active li a:hover {
