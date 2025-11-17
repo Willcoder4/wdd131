@@ -51,6 +51,7 @@ nav {
     height: 30px;
     display: flex;
     flex-direction: column;
+    row-gap: 3px;
 }
 
 .bar {
