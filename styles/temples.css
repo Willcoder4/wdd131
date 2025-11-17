@@ -85,6 +85,10 @@ nav {
   padding: 1rem;
 }
 
+.menu.active li a {
+  width: 100%;
+}
+
 main {
     width: 90%;
     max-width: 100%;
