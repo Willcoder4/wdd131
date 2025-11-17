@@ -85,8 +85,8 @@ nav {
   padding: 1rem;
 }
 
-.menu.active li a {
-  width: 100%;
+.menu.active li a:hover {
+  background: rgba(0, 255, 0, 0.1);
 }
 
 main {
