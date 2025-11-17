@@ -72,7 +72,7 @@ nav {
   left: 0;
   display: flex;
   flex-direction: column;
-  background: ;
+  background: #333;
 }
 
 .menu.active li, .menu.active li a {
