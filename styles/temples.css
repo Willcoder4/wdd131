@@ -102,12 +102,12 @@ nav {
 }
 
 .menu-toggle.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(50deg);
   transition: all .3s ease-in-out;
 }
 
 .menu-toggle.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-50deg);
   transition: all .3s ease-in-out;
 }
 
