@@ -106,7 +106,7 @@ nav {
   transition: all .7s ease-in-out;
 }
 
-.menu-toggle:nth-child(3) {
+.menu-toggle.active:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
   transition: all .7s ease-in-out;
 }
