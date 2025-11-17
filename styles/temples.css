@@ -97,7 +97,7 @@ nav {
   background: rgba(0, 255, 0, 0.1);
 }
 
-.menu-toggle:nth-child(2) {
+.menu-toggle.active:nth-child(2) {
   opacity: 0;
 }
 
