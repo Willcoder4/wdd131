@@ -1,10 +1,10 @@
 @media screen and (min-width: 50em) {
-    .navigation::before {
-        content: none;
+    ..menu-toggle {
+        display: none;
     }
     
-    li {
-        display: block;
+    .menu {
+        display: flex;
     }
 
     ul {
