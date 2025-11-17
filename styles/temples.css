@@ -73,6 +73,11 @@ nav {
   display: flex;
   flex-direction: column;
 }
+
+.menu.active ul li, .menu.active ul li a {
+  list-style: none;
+  text-decoration: none;
+}
 main {
     width: 90%;
     max-width: 100%;
