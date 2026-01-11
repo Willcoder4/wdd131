@@ -7,9 +7,9 @@
 body {
     background-color: rgb(169, 168, 168);
     /* font-size: 1.2rem; */
-    font-size: 1.5vw;
+    font-size: 1.6vw;
     color: black;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 }
 
 header span {
@@ -17,6 +17,7 @@ header span {
     text-align: center;
     /* font-size: 2rem; */
     font-size: 2.5vw;
+    font-weight: bolder;
     padding: .5em;
     background-color: rgba(4, 4, 167 , .8);
     color: aliceblue;
@@ -44,6 +45,7 @@ header nav ul li {
 }
 
 header nav ul li a {
+    font-weight: 600;
     text-decoration: none;
     color: aliceblue;
     padding: .3em 0;
@@ -78,8 +80,9 @@ main h1 {
 }
 
 .card {
-    border: 2px solid blue;
-    border-radius: 10px;
+    border: 2px solid rgba(4, 4, 167, .8);
+    border-radius: 12px;
+    /* box-shadow: 0 0 15px; */
 }
 
 .card .card-position {
@@ -100,7 +103,7 @@ img {
     box-shadow: 0 5px 15px black;
     color: whitesmoke;
     /* font-size: medium; */
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     padding: .8em;
     border-radius: 10px 10px 0 0;
     text-align: center;
