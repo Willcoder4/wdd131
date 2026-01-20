@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(169, 168, 168);
+    /* background-color: rgb(169, 168, 168); */
     /* font-size: 1.2rem; */
     font-size: 1.6vw;
     color: black;
@@ -206,7 +206,7 @@ footer {
 }
 
 #lastmodified {
-    color: yellowgreen;
+    color: yellow;
     font-size: 1.4vw;
     margin-top: .5vw;
 }
