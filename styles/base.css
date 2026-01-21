@@ -12,6 +12,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+header {
+    width: 100%;
+}
+
 header span {
     display: block;
     text-align: center;
