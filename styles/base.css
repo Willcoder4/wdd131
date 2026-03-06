@@ -12,6 +12,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Heading Section Styles*/
 header {
     width: 100%;
 }
@@ -28,6 +29,7 @@ header span {
     border-bottom: 1px solid black;
 }
 
+/* Navigation Section Styles */
 header nav ul {
     width: 100%;
     height: 100%;
@@ -67,6 +69,7 @@ header nav ul li a:hover, header nav ul li a:focus {
     transition: all .5s ease-in-out;
 }
 
+/* Main Content Styles */
 main {
     width: 90%;
     margin: 0 auto;
@@ -198,6 +201,7 @@ img {
     transition: all .5s ease-in-out;
 }
 
+/* Footer Styles */
 footer {
     background-color: rgba(4, 4, 167 , .8);
     color: whitesmoke;
