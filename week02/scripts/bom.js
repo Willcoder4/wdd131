@@ -15,6 +15,7 @@ button.addEventListener('click', () => {
 
         list.append(li);
         input.value = '';
+        input.focus();
 
         // Adds functionality to the delete button to remove the chapter from the list when clicked
         deleteButton.addEventListener('click', () => {
