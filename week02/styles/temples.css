@@ -126,6 +126,8 @@ img {
     width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
 img:hover {
