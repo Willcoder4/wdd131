@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the country page for Fegor William Abije's WDD131 Dynamic Web Fundamentals class project.">
+    <meta name="author" content="Fegor William Abije">
+    <title>Fegor William Abije - Country Page || WDD131 Dynamic Web Fundamentals</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    <main>
+        <div class="hero-section">
+            <picture>
+                <!-- <source srcset="images/nigeria's-flag-view.webp" media="(max-width: 768px)"> -->
+                <source srcset="images/nigerians-cheering.webp" media="(min-width: 1024px)">
+                <img src="images/nigeria's-flag-view.webp" alt="Nigeria">
+            </picture>
+        </div>
+        <section class="data-section">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Population:</strong> 206 million (2021)</li>
+                <li><strong>Area:</strong> 923,768 square kilometers</li>
+                <li><strong>Capital:</strong> Abuja</li>
+                <li><strong>Languages:</strong> English</li>
+                <li><strong>Currency:</strong> Nigerian Naira (NGN)</li>
+                <li><strong>Time Zone:</strong> WAT (UTC+1)</li>
+                <li><strong>Calling Code:</strong> +234</li>
+                <li><strong>Internet TLD:</strong> .ng</li>
+            </ul>
+        </section>
+        <section class="weather-section">
+            <h2>Weather</h2>
+            <img class="weather-icon" src="images/icons/cloudy_1163661.png" alt="weather icon">
+            <ul>
+                <li><strong>Temperature:</strong> 25°C (77°F)</li>
+                <li><strong>Condition:</strong> Sunny</li>
+                <li><strong>Wind Speed:</strong> 10 km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span>✨Fegor William Abije✨</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+</html>
