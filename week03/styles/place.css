@@ -74,17 +74,17 @@ footer {
 
 @media  (min-width: 1024px) {
     .data-section {
-        width: 40%;
+        width: 30%;
         height: auto;
         position: absolute;
-        left: 5%;
+        left: 2%;
         top: 20%;
         font: 100%;
         /* transform: translateY(-50%); */
     }
 
     .weather-section {
-        width: 30%;
+        width: 25%;
         height: auto;
         position: absolute;
         right: 2%;
