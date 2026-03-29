@@ -110,6 +110,10 @@ footer {
         box-shadow: 0 0 15px var(--shadow-color);
     }
 
+    section:hover {
+        transform: translateX(-5px) translateY(-5px);
+    }
+
     section ul {
         font-size: smaller;
         padding: 1.5em;
