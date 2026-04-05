@@ -1,0 +1,31 @@
+@media screen and (min-width: 1024px) {
+    section {
+        grid-template-columns: repeat(3, minmax(250px, 1fr));
+        gap: 2em;
+    }
+
+    .menu-bar {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        /* gap: 1em; */
+    }
+
+    .menu a {
+        font-size: small;
+        /* background-color: black; */
+        padding: .5em .8em;
+        width: 100%;
+        border-right: 1px solid rgb(38, 38, 206);
+        
+    }
+
+    .menu a:hover, .menu a:focus {
+        background: rgb(35, 35, 185);
+        transition: all .5s ease-in-out;
+        /* border-radius: 10px; */
+    }
+}
