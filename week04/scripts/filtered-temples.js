@@ -97,7 +97,7 @@ const temples = [
 const container = document.getElementById("temple-container");
 
 function showTemples(temps) {
-  // container.innerHTML = "";
+  container.innerHTML = "";
   temps.forEach(temple => {
     const templeCard = document.createElement('figure');
     const info = document.createElement('div');
@@ -135,14 +135,30 @@ let large = document.getElementById("large");
 let small = document.getElementById("small");
 
 function getDedicatedYear(dedicated) {
-  const dedicated = parseInt(temples.split(',') [0]);
-}
+  const dedicatedYear = parseInt(dedicated.split(',') [0]);
+  return dedicatedYear;
+};
 
 home.addEventListener('click', () => {
   showTemples(temples);
-})
+});
 
 old.addEventListener('click', () => {
   const oldTemples = temples.filter(temple => getDedicatedYear(temple.dedicated) < 1900);
   showTemples(oldTemples);
-})
+});
+
+newTemple.addEventListener('click', () => {
+  const newTemples = temples.filter(temple => getDedicatedYear(temple.dedicated) > 2000);
+  showTemples(newTemples);
+});
+
+large.addEventListener('click', () => {
+  const largeTemples = temples.filter(temple => temple.area > 90000);
+  showTemples(largeTemples);
+});
+
+small.addEventListener('click', () => {
+  const smallTemples = temples.filter(temple => temple.area < 10000);
+  showTemples(smallTemples);
+});
