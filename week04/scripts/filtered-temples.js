@@ -1,9 +1,17 @@
 const menuBar = document.querySelector('.menu-bar');
 const menu = document.querySelector('.menu');
+const body = document.querySelector('body');
 
 menuBar.addEventListener('click', () => {
     menuBar.classList.toggle('active');
-    menu.classList.toggle('open-menu')
+    menu.classList.toggle('open-menu');
+});
+
+body.addEventListener('click', (e) => {
+    if (!menu.contains(e.target) && !menuBar.contains(e.target)) {
+        menuBar.classList.remove('active');
+        menu.classList.remove('open-menu');
+    };
 });
 
 
@@ -126,7 +134,7 @@ function showTemples(temps) {
   })
 }
 
-showTemples(temples);
+showTemples(temples); 
 
 let home = document.getElementById("home");
 let old = document.getElementById("old");

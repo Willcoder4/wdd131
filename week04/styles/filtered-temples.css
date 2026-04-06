@@ -59,7 +59,7 @@ header {
     flex-direction: column;
     justify-content: space-around;
     position: absolute;
-    top: 74px;
+    top: 90px;
     right: 0;
     background: rgb(23, 22, 22);
     box-shadow: 0 2px 20px black;
