@@ -116,8 +116,8 @@ function showTemples(temps) {
     location.textContent = `Location: ${temple.location}`;
     const dedicated = document.createElement('p');
     dedicated.textContent = `Dedicated: ${temple.dedicated}`;
-    const size = document.createElement('p');
-    size.textContent = `Size: ${temple.area} sq ft`;
+    const area = document.createElement('p');
+    area.textContent = `Area: ${temple.area} sq ft`;
     const image = document.createElement('img');
     image.src = temple.imageUrl;
     image.alt = `${temple.templeName} Image`;
@@ -127,7 +127,7 @@ function showTemples(temps) {
     info.appendChild(name);
     info.appendChild(location);
     info.appendChild(dedicated);
-    info.appendChild(size);
+    info.appendChild(area);
 
     templeCard.appendChild(info);
     templeCard.appendChild(image);
