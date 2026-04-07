@@ -122,6 +122,7 @@ function showTemples(temps) {
     image.src = temple.imageUrl;
     image.alt = `${temple.templeName} Image`;
     image.loading = 'lazy';
+    image.width = '400'
 
     info.appendChild(name);
     info.appendChild(location);
