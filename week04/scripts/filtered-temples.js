@@ -1,3 +1,4 @@
+// Navigation Menu
 const menuBar = document.querySelector('.menu-bar');
 const menu = document.querySelector('.menu');
 const body = document.querySelector('body');
@@ -14,7 +15,7 @@ body.addEventListener('click', (e) => {
     };
 });
 
-
+// Temple List
 const temples = [
   {
     templeName: "Aba Nigeria",
@@ -104,6 +105,7 @@ const temples = [
 
 const container = document.getElementById("temple-container");
 
+// Show/Render Temples Function
 function showTemples(temps) {
   container.innerHTML = "";
   temps.forEach(temple => {
@@ -135,39 +137,41 @@ function showTemples(temps) {
   })
 }
 
-showTemples(temples); 
+showTemples(temples); // Show all temples by default
 
-let home = document.getElementById("home");
+// Filter Temples Based by Dedicated Year and Area
+let home = document.getElementById("home"); 
 let old = document.getElementById("old");
 let newTemple = document.getElementById("new");
 let large = document.getElementById("large");
 let small = document.getElementById("small");
 
+//// Get Dedicated Year
 function getDedicatedYear(dedicated) {
   const dedicatedYear = parseInt(dedicated.split(',') [0]);
   return dedicatedYear;
 };
 
 home.addEventListener('click', () => {
-  showTemples(temples);
+  showTemples(temples); // Show all temples
 });
 
 old.addEventListener('click', () => {
   const oldTemples = temples.filter(temple => getDedicatedYear(temple.dedicated) < 1900);
-  showTemples(oldTemples);
+  showTemples(oldTemples); // Show old temples
 });
 
 newTemple.addEventListener('click', () => {
   const newTemples = temples.filter(temple => getDedicatedYear(temple.dedicated) > 2000);
-  showTemples(newTemples);
+  showTemples(newTemples); // Show new temples
 });
 
 large.addEventListener('click', () => {
   const largeTemples = temples.filter(temple => temple.area > 90000);
-  showTemples(largeTemples);
+  showTemples(largeTemples); // Show large temples
 });
 
 small.addEventListener('click', () => {
   const smallTemples = temples.filter(temple => temple.area < 10000);
-  showTemples(smallTemples);
+  showTemples(smallTemples); // Show small temples
 });
