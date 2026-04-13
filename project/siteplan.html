@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Plan</title>
+    <link rel="stylesheet" href="/project/styles/site-plan.css">
+    <script src="/scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -24,8 +29,35 @@
         </ul>
 
         <h2>Color Schema:</h2>
-        <p><span class="color1" style="background-color: green;">Color 1</span> <span class="color2">Color 2</span> <span class="color3">Color 3</span></p>
+        <ul>
+            <li><span class="bold">Primary Color - </span><span class="primary-color">#2D6A4F: </span>Used for headings, icons and primary action buttons</li>
+            <li><span class="bold">Secondary Color - </span><span class="secondary-color">#F8F9FA: </span>Used for background</li>
+            <li><span class="bold">Accent Color - </span><span class="accent-color">#212529: </span>Used for body texts</li>
+        </ul>
+
+        <h2>Typography:</h2>
+        <ul>
+            <li>Montserrat: used on the app icon, dashboard title, goal titles and educational headers (h1, h2, h3)</li>
+            <li>Inter (Regular): Used on the paragraph texts.</li>
+            <li>Inter (Medium/Semi-Bold): Used on tracking data and function UIs.</li>
+        </ul>
+
+        <h2>Wireframe:</h2>
+        <div class="wireframes">
+            <figure>
+                <img src="/project/images/grownova-mobile-view.webp" alt="GrowNova Mobile View" width="60px">
+                <figcaption>GrowNova Mobile View</figcaption>
+            </figure>
+
+            <figure>
+                <img src="/project/images/grownova-desktop-view.webp" alt="GrowNova Desktop View" width="60px">
+                <figcaption>GrowNova Desktop View</figcaption>
+            </figure>
+        </div>
     </main>
-    <footer></footer>
+    <footer>
+        <p><span id="currentyear"></span> GrowNova Website || All Rights Reserved</p>
+        <p id="lastmodified"></p>
+    </footer>
 </body>
 </html>
