@@ -1,3 +1,12 @@
+// Navigation toggle
+const menuButton = document.querySelector('.menu-button');
+const navLinks = document.querySelector('.nav-links');
+
+menuButton.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    menuButton.classList.toggle('active');
+});
+
 // Data handling
 let goals = JSON.parse(localStorage.getItem('growNow_Goals')) || [];
 

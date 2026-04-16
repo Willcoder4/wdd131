@@ -114,8 +114,8 @@ header {
     background: var(--primary);
     color: white;
     aspect-ratio: 1/1;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(autofill, minmax(200px, 1fr));
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -211,7 +211,8 @@ footer {
 
 /* Responsive Logic */
 @media (max-width: 768px) {
-    .nav-links { display: none; } /* Could be replaced with a menu icon later */
+    .nav-links { display: none; } 
+    
     .menu-button {
         background-color: none;
     }
@@ -225,7 +226,50 @@ footer {
         /* z-index: 999; */
     }
 
+    .menu-button.active .menu-bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-button.active .menu-bar:first-child {
+        transform: translateY(10px) rotate(45deg);
+        transition: all .3s ease;
+    }
+    
+    .menu-button.active .menu-bar:last-child {
+        transform: translateY(-10px) rotate(-45deg);
+        transition: all .3s ease;
+    }
+
+    .open {
+        display: block;
+        position: absolute;
+        top: 82px;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary);
+        text-align: center;
+    }
+
+    .open li a {
+        font-size: larger;
+        font-weight: 700;
+        text-decoration: none;
+        display: block;
+        /* width: 100%; */
+        border-bottom: 1px solid var(--accent);
+    }
+
+    .open li a:hover {
+        color: var(--secondary);
+        background-color: var(--accent);
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+    
     .hero h1 { font-size: 1.8rem; }
+
     .goal-item {
         flex-direction: column;
         text-align: center;
