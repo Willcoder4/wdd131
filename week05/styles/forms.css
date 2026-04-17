@@ -1,0 +1,89 @@
+:root {
+    --primary-color: #4a148c; /* Dark Purple */
+    --bg-color: #d1c4e9;      /* Light Purple */
+    --text-color: #212121;
+    --accent-color: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: var(--text-color);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    background-color: var(--bg-color);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+label, p {
+    margin-top: 15px;
+    font-weight: bold;
+    display: block;
+}
+
+.required {
+    color: #b71c1c;
+}
+
+input[type="text"], input[type="date"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #9e9e9e;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
