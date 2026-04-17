@@ -26,7 +26,7 @@ h1, h2, h3, .logo {
     color: var(--primary);
 }
 
-/* 2. Layout Navigation */
+/* 2. Navigation */
 header {
     background: var(--white);
     padding: 1rem 5%;
@@ -49,6 +49,7 @@ header {
     display: flex; 
     list-style: none; 
     gap: 2rem; 
+    align-items: content;
 }
 
 .nav-links a { 
@@ -62,7 +63,7 @@ header {
     color: var(--primary);
 }
 
-/* 3. Common Page Structures */
+/* 3. Page Structures */
 .page-title {
     margin-bottom: 30px;
 }
@@ -212,7 +213,7 @@ footer {
 /* Responsive Logic */
 @media (max-width: 768px) {
     .nav-links { display: none; } 
-    
+
     .menu-button {
         background-color: none;
     }
